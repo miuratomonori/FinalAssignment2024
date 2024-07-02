@@ -1,5 +1,4 @@
 import os
-import logging
 import datetime as dt
 
 #現在時刻の取得
@@ -10,6 +9,6 @@ now = now.strftime('%Y-%m-%d %H-%M-%S-%f')
 path = '.\\Section04\\log\\'+str(now)+'.log'
 #新規ファイルの作成
 log = open(path,'w')
-
+#ファイルに出力
 log.write('This is test. File launch successful' + str(now))
 log.close()
